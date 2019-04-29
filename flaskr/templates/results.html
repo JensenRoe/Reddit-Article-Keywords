@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../static/results.css">
+</head>
+{% block header %}
+<div id="header">
+  <h1>{% block title %}Articles{% endblock %}</h1>
+</div>
+{% endblock %}
+<body>
+{% block content %}
+  <div id="backToSearch">
+    <a href="search_query">Back to search<img src="../static/backarrow.png"></a>
+  </div>
+  <div id="contentBlock">
+    {% for article in range(title_array|length) %}
+      <div id="article_header">
+        <p id="articleTitle">{{ title_array[article] }}</p>
+        <a href="{{ permalinks_array[article] }}">link to article</a>
+      </div>
+      <div id="contextBlock">
+      <ul class="related_article_list">
+      {% for related_article in related_articles[article] %}
+        <li class="related_article">{{ related_article }}</li>
+        <br>
+      {% endfor %}
+      </ul>
+      </div>
+    {% endfor %}
+  </div>
+</body>
+{% endblock %}

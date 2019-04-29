@@ -1,0 +1,77 @@
+#header
+{
+	width: 100px;
+	height: 30px;
+	margin: auto;
+}
+
+h1
+{
+	font-family: schriftbild;
+	font-size: 24pt;
+	text-align: center;
+	color: white;
+}
+
+body
+{
+	font-family: schriftbild;
+	background-color: #21201f;
+}
+
+#article_header
+{
+	width: 600px;
+	margin: auto;
+}
+
+a
+{
+	display: inline-block;
+	color: #85ace2;
+}
+
+#articleTitle
+{
+	text-align: center;
+	font-size: 18pt;
+	color: white;
+}
+
+#contextBlock
+{
+	background-color: #38404c;
+	color: white;
+}
+
+.related_article
+{
+	list-style-type: none;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #21201f;
+}
+
+#contentBlock
+{
+	width: 800px;
+	margin: auto;
+	background-color: #485260;
+	height: auto;
+	border-radius: 20px;
+	padding-bottom: 10px;
+}
+
+img
+{
+	height: 200px;
+	width: 150px;
+}
+
+#backToSearch
+{
+	text-align: center;
+	color: white;
+	width: 400px;
+	float: left;
+}
+

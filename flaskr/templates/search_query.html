@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../static/style.css">
+		<script type="text/javascript" src="../static/loading.js"></script>
+	</head>
+	<body>
+
+<!--{% block header %}-->
+		<div id="headerSection">
+			<img class="weblogos" id="redditPic" src="../static/reddit.png">
+			<img class="weblogos" id="wikiPic" src="../static/wiki.png">
+		  <h1><!--{% block title %}-->Search Subreddit<!--{% endblock %}--></h1>
+		</div>
+	<!--{% endblock %}-->
+
+	<!--{% block content %}-->
+		<div id="searchQuery">
+		  <form method="post">
+		  	<div id="inputSub">
+		    <label for="subreddit" id="searchLabel">Subreddit</label>
+		    <input name="subreddit" id="search" required>
+		    </div>
+		    <div id="inputLimit">
+		    <label for="search_query_limit" id="limitLabel">Article Limit (1-20)</label>
+		    <input name="search_query_limit" id="search_query_limit" required>
+		    </div>
+		    <input id="submitBtn" type="submit" onclick="loading()" value="Get Article Context">
+		  </form>
+		</div>
+
+		<div id="howTo">
+			<p>
+				This article context provider will pull the article limit of articles from
+				the "hot" sort of a specified subreddit.<br> In order to use, please insert the subreddit of choice excluding the /r/ prefix and the number of article headlines you would like to recieve context on.<br> Subreddits dedicated to news articles or that implement rules on correct title grammar are best for the algorithm to catch the most important words.
+			</p>
+			<p id="loadingtext" class="loading">*Loading times can take up to 2 minutes gathering data from both reddit and wikipedia for articles limits above 10</p>
+			<img id="loadingGif" class="loading" src="../static/loading.gif">
+		</div>
+
+		<div id="credits">
+			<p>
+				This Flask application was created by Jensen Roe
+			</p>
+		</div>
+	</body>
+<!--{% endblock %}-->
+</html>

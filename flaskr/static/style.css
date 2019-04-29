@@ -1,0 +1,135 @@
+#headerSection
+{
+	display: block;
+	top: 200px;
+	position: relative;
+	height: 100px;
+	width: 35%;
+	margin: auto;
+	text-align: center;
+	color: #21201f;
+	background-color: #828282;
+	border-radius: 20px 20px 0px 0px;
+}
+
+h1
+{
+	width: 40%;
+	margin: auto;
+	position: relative;
+	top: 40px;
+}
+
+#searchQuery
+{
+	display: block;
+	position: relative;
+	top: 200px;
+	height: 200px;
+	width: 35%;
+	margin: auto;
+	background-color: #4f74af;
+	border-radius: 0px 0px 20px 20px;
+}
+
+#search, #search_query_limit
+{
+	padding: 8px;
+	border-radius: 10px;
+}
+
+#limitLabel, #searchLabel
+{
+	display: block;
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+#inputSub
+{
+	float: left;
+}
+
+#inputLimit
+{
+	float: right;
+}
+
+body
+{
+	background-color: #21201f;
+}
+
+#redditPic
+{
+	width: 26%;
+	height: auto;
+	float: left;
+	position: relative;
+	top: 30px
+}
+
+#wikiPic
+{
+	width: 26%;
+	height: auto;
+	float: right;
+	position: relative;
+	bottom: 4px;
+}
+
+#submitBtn
+{
+	position: relative;
+	top: 100px;
+	display: block;
+	margin: auto;
+	padding: 5px;
+	border-radius: 10px;
+	width: 200px;
+	font-size: 12pt;
+}
+
+#howTo
+{
+	position: relative;
+	margin: auto;
+	top: 200px;
+	display: block;
+	width: 600px;
+	color: #cecece;
+	font-size: 15pt;
+	height: 200px;
+}
+
+#credits
+{
+	position: relative;
+	margin: auto;
+	display: block;
+	top: 400px;
+	width: 400px;
+	color: #a0a0a0;
+}
+
+
+.loading
+{
+	display: block;
+	margin: auto;
+	position: relative;
+	height: 150px;
+	width: 300px;
+}
+
+#loadingGif
+{
+	position: relative;
+	bottom: 75px;
+	visibility: hidden;
+}
+
+#loadingtext
+{
+	visibility: hidden;
+}
